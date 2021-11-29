@@ -1,0 +1,72 @@
+import React from 'react';
+import { SidebarStyle } from '../styles/Sidebar.styled';
+import { ButtonSidebar, ButtonSidebarChild } from '../styles/Button.styled';
+import { FlexEnd } from '../styles/Flex.styled';
+import {
+  FaChartLine,
+  FaChartPie,
+  FaRobot,
+  FaChevronRight,
+  FaCogs,
+  FaChevronLeft,
+} from 'react-icons/fa';
+
+function Sidebar() {
+  return (
+    <SidebarStyle>
+      <FlexEnd>
+        <a>
+          <FaChevronLeft />
+        </a>
+      </FlexEnd>
+      <div>
+        <ul>
+          <li>
+            <ButtonSidebar>
+              <FaChartLine />
+              Analisa Akses
+            </ButtonSidebar>
+          </li>
+          <li>
+            <ButtonSidebar>
+              <FaChartPie />
+              Analisa Konten
+            </ButtonSidebar>
+          </li>
+          <li>
+            <ButtonSidebar>
+              <FaRobot />
+              Knomi
+            </ButtonSidebar>
+          </li>
+          <li>
+            <ButtonSidebarChild>
+              <FaChevronRight />
+              Inbox
+            </ButtonSidebarChild>
+          </li>
+          <li>
+            <ButtonSidebarChild>
+              <FaChevronRight />
+              Ref Category
+            </ButtonSidebarChild>
+          </li>
+          <li>
+            <ButtonSidebarChild>
+              <FaChevronRight />
+              Ref Sub Category
+            </ButtonSidebarChild>
+          </li>
+          <li>
+            <ButtonSidebar>
+              <FaCogs />
+              Settings
+            </ButtonSidebar>
+          </li>
+        </ul>
+      </div>
+    </SidebarStyle>
+  );
+}
+
+export default Sidebar;
