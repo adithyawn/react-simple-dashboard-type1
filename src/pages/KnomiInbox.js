@@ -1,11 +1,14 @@
 import React from 'react';
-import PrimaryLayout from '../components/PrimaryLayout';
+import OverviewSection from '../components/OverviewSection';
+import ContentSection from '../components/ContentSection';
 
 function KnomiInbox() {
   return (
     <>
-      <PrimaryLayout />
-      <div>Knomi Inbox Page</div>
+      <OverviewSection />
+      <div>Knomi Inbox</div>
+      <ContentSection />
+      <ContentSection />
     </>
   );
 }

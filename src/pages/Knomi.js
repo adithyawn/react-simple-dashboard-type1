@@ -1,11 +1,9 @@
 import React from 'react';
-import PrimaryLayout from '../components/PrimaryLayout';
 
 function Knomi() {
   return (
     <>
-      <PrimaryLayout />
-      <div>Knomi Page</div>
+      <h1>This is Knomi Page</h1>
     </>
   );
 }

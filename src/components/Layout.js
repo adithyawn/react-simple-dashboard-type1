@@ -6,13 +6,13 @@ import Footer from './Footer';
 import { GridLayout } from '../styles/GridLayout.styled';
 import { useUtilitiesContext } from '../context/utilities_context';
 
-function PrimaryLayout() {
+function Layout({ title }) {
   const { is_sidebar_collapse } = useUtilitiesContext();
 
   return (
     <>
       <GridLayout collapse={is_sidebar_collapse}>
-        <Header />
+        <Header title={title} />
         <Sidebar />
         <Main />
         <Footer />
@@ -21,4 +21,4 @@ function PrimaryLayout() {
   );
 }
 
-export default PrimaryLayout;
+export default Layout;

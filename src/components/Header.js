@@ -11,7 +11,7 @@ import { FaBars, FaSignOutAlt } from 'react-icons/fa';
 
 import { useUtilitiesContext } from '../context/utilities_context';
 
-function Header() {
+function Header({ title }) {
   const { collapseHeaderbar, is_headerbar_collapse } = useUtilitiesContext();
 
   return (
@@ -20,7 +20,7 @@ function Header() {
         <FaBars size={20} color={'#3d3d3d'} onClick={collapseHeaderbar} />
         <LogoTitleStyle>
           <Logo src={img} alt='' />
-          <Title>KM Dashboard</Title>
+          <Title>{title}</Title>
         </LogoTitleStyle>
         <FaSignOutAlt size={20} color={'#3d3d3d'} />
       </HeaderStyle>

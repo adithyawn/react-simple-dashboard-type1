@@ -1,11 +1,13 @@
 import React from 'react';
-import PrimaryLayout from '../components/PrimaryLayout';
-
+import ContentSection from '../components/ContentSection';
+import OverviewSection from '../components/OverviewSection';
 function AnalisaAkses() {
   return (
     <>
-      <PrimaryLayout />
-      <div>Analisa Akses Page</div>
+      <div>Analisa Akses</div>
+      <OverviewSection />
+      <ContentSection />
+      <ContentSection />
     </>
   );
 }

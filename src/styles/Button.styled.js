@@ -34,6 +34,45 @@ export const ButtonSidebarStyle = styled.div`
   }
 `;
 
+export const ButtonSidebarTreeStyle = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  color: ${({ theme }) => theme.colors.grey};
+  align-items: center;
+  background: ${({ theme }) => theme.colors.white};
+  cursor: pointer;
+
+  &:hover {
+    background: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.white};
+  }
+
+  /* Keep Text Show When Mobile View */
+
+  p {
+    display: block;
+  }
+
+  svg {
+    margin: 0 10px;
+  }
+
+  @media (min-width: ${({ theme }) => theme.mobile}) {
+    /* Hide Text When Collapse Sidebar Active */
+    p {
+      display: ${(props) => (props.collapse ? 'none' : 'block')};
+    }
+    .collapse-icon {
+      display: ${(props) => (props.collapse ? 'none' : 'block')};
+    }
+  }
+`;
+
 export const ButtonSidebarChildStyle = styled(ButtonSidebarStyle)`
   margin-left: 10px;
 

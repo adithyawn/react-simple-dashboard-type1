@@ -1,11 +1,13 @@
 import React from 'react';
-import PrimaryLayout from '../components/PrimaryLayout';
-
+import ContentSection from '../components/ContentSection';
+import OverviewSection from '../components/OverviewSection';
 function AnalisaKonten() {
   return (
     <>
-      <PrimaryLayout />
-      <div>Analisa Konten Page</div>
+      <div>Analisa Konten</div>
+      <OverviewSection />
+      <ContentSection />
+      <ContentSection />
     </>
   );
 }

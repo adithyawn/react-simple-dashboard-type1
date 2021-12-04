@@ -1,11 +1,12 @@
 import React from 'react';
-import PrimaryLayout from '../components/PrimaryLayout';
+import ContentSection from '../components/ContentSection';
 
 function KnomiSubcategory() {
   return (
     <>
-      <PrimaryLayout />
-      <div>Knomi Subcategory Page</div>
+      <div>Knomi Subcategory</div>
+      <ContentSection />
+      <ContentSection />
     </>
   );
 }

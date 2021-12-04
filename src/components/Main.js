@@ -1,13 +1,11 @@
 import React from 'react';
 import { MainStyle } from '../styles/Main.styled';
-import OverviewSection from './OverviewSection';
-import ContentSection from './ContentSection';
+import { Outlet } from 'react-router-dom';
+
 function Main() {
   return (
     <MainStyle>
-      <OverviewSection />
-      <ContentSection />
-      <ContentSection />
+      <Outlet />
     </MainStyle>
   );
 }
