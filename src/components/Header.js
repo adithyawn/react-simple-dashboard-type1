@@ -5,14 +5,21 @@ import {
   Title,
   LogoTitleStyle,
 } from '../styles/Header.styled';
-import { FlexCenter } from '../styles/Flex.styled';
 import img from '../assets/logokm.png';
 import { FaBars, FaSignOutAlt } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 import { useUtilitiesContext } from '../context/utilities_context';
 
 function Header({ title }) {
-  const { collapseHeaderbar, is_headerbar_collapse } = useUtilitiesContext();
+  const { collapseHeaderbar } = useUtilitiesContext();
+
+  const navigate = useNavigate();
+
+  const handleLogout = (e) => {
+    e.preventDefault();
+    navigate('/');
+  };
 
   return (
     <>
@@ -22,7 +29,12 @@ function Header({ title }) {
           <Logo src={img} alt='' />
           <Title>{title}</Title>
         </LogoTitleStyle>
-        <FaSignOutAlt size={20} color={'#3d3d3d'} />
+        <FaSignOutAlt
+          className='logout-button'
+          size={20}
+          color={'#3d3d3d'}
+          onClick={handleLogout}
+        />
       </HeaderStyle>
     </>
   );
