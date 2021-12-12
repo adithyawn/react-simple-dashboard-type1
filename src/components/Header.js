@@ -24,7 +24,7 @@ function Header({ title }) {
   return (
     <>
       <HeaderStyle>
-        <FaBars size={20} color={'#3d3d3d'} onClick={collapseHeaderbar} />
+        <FaBars size={20} color={'#ffff'} onClick={collapseHeaderbar} />
         <LogoTitleStyle>
           <Logo src={img} alt='' />
           <Title>{title}</Title>
@@ -32,7 +32,7 @@ function Header({ title }) {
         <FaSignOutAlt
           className='logout-button'
           size={20}
-          color={'#3d3d3d'}
+          color={'#ffff'}
           onClick={handleLogout}
         />
       </HeaderStyle>

@@ -27,6 +27,7 @@ export const ButtonSidebarStyle = styled.div`
   color: ${(props) =>
     props.active ? props.theme.colors.white : props.theme.colors.grey};
   align-items: center;
+  /* background: ${({ theme }) => theme.colors.white}; */
   background: ${(props) =>
     props.active ? props.theme.colors.primary : props.theme.colors.white};
   cursor: pointer;

@@ -17,12 +17,14 @@ import LoginPage from './pages/LoginPage';
 const theme = {
   colors: {
     primary: '#1081e8',
+    primary_darker: '#0962b3',
     secondary: '#6c757d',
     success: '#28a745',
     info: '#17a2b8',
     danger: '#dc3545',
     warning: '#ffc107',
-    light: '#f8f8f8',
+    light: '#fbfbfb',
+    light_darker: '#f5f5f5',
     white: '#fff',
     grey: '#3d3d3d',
   },
@@ -31,7 +33,6 @@ const theme = {
   },
   mobile: '480px',
 };
-
 function App() {
   return (
     <ThemeProvider theme={theme}>

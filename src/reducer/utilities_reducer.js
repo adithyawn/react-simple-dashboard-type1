@@ -13,6 +13,13 @@ const utilities_reducer = (state, action) => {
       is_headerbar_collapse: !is_headerbar_collapse,
     };
   }
+  if (action.type === 'SELECTED_ID_SIDEBAR') {
+    const data = action.payload;
+    return {
+      ...state,
+      selected_id_sidebar: data,
+    };
+  }
   throw new Error('no matching action type');
 };
 
